@@ -89,6 +89,8 @@ module Web.Api.WebDriver.Types (
   , ResponseErrorCode(..)
   ) where
 
+import Control.Monad.Fail
+  ( MonadFail )
 import Control.Monad.IO.Class
 import qualified Data.ByteString as SB
 import qualified Data.ByteString.Base64 as B64
